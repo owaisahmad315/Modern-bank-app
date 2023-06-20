@@ -1,18 +1,22 @@
-import styles from './style'
+ import styles from './style'
+ import React from "react";
 
-const App = () =>  (
-    <div className="bg-primary w-full overflow-hidden">
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
-          Navbar
-        </div>
+ import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
+const App = () => (
+  <div className="bg-primary w-full overflow-hidden">
+     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+       < Navbar/>
       </div>
-      <div className={`bg-primary ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          Hero section of the website
-        </div>
+    </div>
+
+     <div className={`bg-primary ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Hero />
       </div>
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+    </div>
+    
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Stats />
         <Business />
@@ -24,8 +28,8 @@ const App = () =>  (
         <Footer />
       </div>
     </div>
-    </div>
-  );
+   
+  </div>
+);
 
-
-export default App
+export default App;
